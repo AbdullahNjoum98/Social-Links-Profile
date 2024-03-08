@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Inter;
+    src: url('/assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+:root {
+    --darkblack: rgba(15, 15, 15, 0.973);
+    --lightblack: #222222;
+    --greyblack: #383838;
+    --white: rgba(255, 255, 255, 0.842);
+}
+body {
+    background-color: var(--darkblack);
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--white);
+}
+.container {
+    width: 25%;
+    margin: 15% auto;
+    padding: 3% 1%;
+    background-color: var(--lightblack);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+}
+img {
+    width: 25%;
+    border-radius: 50%;
+    margin-bottom: 8%;
+}
+.profile-info > h2, h5 {
+    font-family: Inter;
+}
+.profile-info :nth-child(1) {
+    line-height: 0.1;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    row-gap: 1em;
+}
+.buttons button {
+    color: var(--white);
+    background-color: var(--greyblack);
+    border: none;
+    border-radius: 5px;
+    width: 85%;
+    padding: 3.5%;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.buttons button:active {
+    background-color: var(--lightblack);
+}
